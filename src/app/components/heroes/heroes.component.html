@@ -19,10 +19,19 @@
             <th scope="col">Nombre</th>
             <th scope="col">Poder</th>
             <th scope="col">Casa</th>
+            <th scope="col">Biografia</th>
             <th scope="col">Opciones</th>
           </tr>
         </thead>
         <tbody>
+          <tr *ngFor="let k of heroes | keys; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{  heroes[k].nombre }}</td>
+            <td>{{  heroes[k].poder  }}</td>
+            <td>{{  heroes[k].casa   }}</td>
+            <td>{{  heroes[k].bio    }}</td>
+            <td><button type="button" (click)="eliminar(k)" class="btn btn-primary btn-danger">Eliminar</button> <button type="button" [routerLink]="['/heroe' , k]" class="btn btn-success">Editar</button> </td>
+          </tr>
 
         </tbody>
       </table>

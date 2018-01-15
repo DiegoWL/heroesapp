@@ -5,7 +5,7 @@ import {HeroesEditComponent} from '../app/components/heroes-edit/heroes-edit.com
 
 const app_routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
-  {path:'heroe/:id' , component: HeroeComponent},
+  { path:'heroe/:id' , component: HeroeComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'heroes' }
 ];
 

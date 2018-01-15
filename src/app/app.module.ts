@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroesEditComponent } from './components/heroes-edit/heroes-edit.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { KeysPipe } from './pipes/keys.pipe';
 
 
 
@@ -18,7 +19,8 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     AppComponent,
     HeroesComponent,
     HeroesEditComponent,
-    HeroeComponent
+    HeroeComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
